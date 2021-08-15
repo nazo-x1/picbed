@@ -1,0 +1,138 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "86.moc3",
+    "Textures": [
+      "86.4096/texture_00.png"
+    ],
+    "Physics": "86.physics3.json",
+    "PhysicsV2": {
+      "File": "86.physics3.json"
+    },
+    "Motions": {
+      "pose@Param9#9": [
+        {
+          "Command": "parameters lock Param9 1",
+          "VarFloats": [
+            {
+              "Name": "Param9",
+              "Type": 1,
+              "Code": "equal 0"
+            },
+            {
+              "Name": "Param9",
+              "Type": 2,
+              "Code": "assign 1"
+            }
+          ]
+        },
+        {
+          "Command": "parameters unlock Param9",
+          "VarFloats": [
+            {
+              "Name": "Param9",
+              "Type": 1,
+              "Code": "equal 1"
+            },
+            {
+              "Name": "Param9",
+              "Type": 2,
+              "Code": "assign 0"
+            }
+          ]
+        }
+      ],
+      "pose@Param10#9": [
+        {
+          "Command": "parameters lock Param10 1",
+          "VarFloats": [
+            {
+              "Name": "Param10",
+              "Type": 1,
+              "Code": "equal 0"
+            },
+            {
+              "Name": "Param10",
+              "Type": 2,
+              "Code": "assign 1"
+            }
+          ]
+        },
+        {
+          "Command": "parameters unlock Param10",
+          "VarFloats": [
+            {
+              "Name": "Param10",
+              "Type": 1,
+              "Code": "equal 1"
+            },
+            {
+              "Name": "Param10",
+              "Type": 2,
+              "Code": "assign 0"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Controllers": {
+    "ParamHit": {},
+    "ParamLoop": {},
+    "KeyTrigger": {},
+    "EyeBlink": {
+      "MinInterval": 500,
+      "MaxInterval": 6000,
+      "Items": [
+        {
+          "Id": "ParamEyeLOpen",
+          "Min": 0.0,
+          "Max": 1.0,
+          "BlendMode": 2,
+          "Input": 0
+        },
+        {
+          "Id": "ParamEyeROpen",
+          "Min": 0.0,
+          "Max": 1.0,
+          "BlendMode": 2,
+          "Input": 0
+        }
+      ],
+      "Enabled": true
+    },
+    "LipSync": {
+      "Gain": 5.0,
+      "Enabled": true
+    },
+    "MouseTracking": {
+      "SmoothTime": 0.15,
+      "Enabled": true
+    },
+    "AutoBreath": {
+      "Enabled": true
+    },
+    "ExtraMotion": {
+      "Enabled": true
+    },
+    "Accelerometer": {
+      "Enabled": true
+    },
+    "Microphone": {},
+    "Transform": {},
+    "FaceTracking": {
+      "Enabled": true
+    },
+    "ParamValue": {},
+    "PartOpacity": {},
+    "ArtmeshOpacity": {},
+    "ArtmeshColor": {},
+    "ArtmeshCulling": {
+      "DefaultMode": 0
+    },
+    "IntimacySystem": {
+      "Enabled": true
+    }
+  },
+  "Options": {}
+}
